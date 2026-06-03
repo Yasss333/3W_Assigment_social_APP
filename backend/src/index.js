@@ -9,10 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: [
-    'https://3-w-assigment-social-mhmahoi1n-yash-mandhares-projects.vercel.app',
-    'http://localhost:5173'  // for local development
-  ],
+  origin: true,
   credentials: true
 }));
 // IMPORTANT: Order matters! urlencoded first, then json
