@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors({
     origin: [
-    'https://3-w-assigment-social-app-git-main-yash-mandhares-projects.vercel.app',
+    'https://3-w-assigment-social-mhmahoi1n-yash-mandhares-projects.vercel.app',
     'http://localhost:5173'  // for local development
   ],
   credentials: true
