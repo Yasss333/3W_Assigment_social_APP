@@ -8,7 +8,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: [
+    'https://3-w-assigment-social-app-git-main-yash-mandhares-projects.vercel.app/',
+    'http://localhost:5173'  // for local development
+  ],
+  credentials: true
+}));
 // IMPORTANT: Order matters! urlencoded first, then json
 app.use(express.urlencoded({extended: true, limit: '50mb'}));
 app.use(express.json({limit: '50mb'}));
